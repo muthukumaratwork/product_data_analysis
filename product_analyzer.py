@@ -12,7 +12,7 @@ export OPENAI_API_KEY="your-api-key-here"
 python product_analyzer.py sample_input.csv results.csv
 
 # Advanced usage with multithreading and batching in mac
-product_analyzer.py input.csv output.csv --threads 10 --batch-size 100 --start-record 1000 --end-record 2000 --api-key=sk-proj-1234567890
+python product_analyzer.py input.csv output.csv --threads 10 --batch-size 100 --start-record 1000 --end-record 2000 --api-key=sk-proj-1234567890
 
 # Advanced usage with multithreading and batching in windows
 ..\venv\Scripts\python product_analyzer.py input.csv output.csv --threads 10 --batch-size 100 --start-record 1000 --end-record 2000 --api-key=sk-proj-1234567890
