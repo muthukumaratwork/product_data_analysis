@@ -185,5 +185,11 @@ python product_analyzer.py input.csv output.csv --start-record 12500 --threads 1
 **API errors**: Check your OpenAI API key and quota
 
 ---
+windows run
+```bash
+### past your key
+..\venv\Scripts\python product_analyzer.py sample_input.csv output.csv --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=your key
+```
+
 
 This enhanced version can efficiently process millions of records with optimal performance and reliability.
