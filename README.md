@@ -188,6 +188,7 @@ python product_analyzer.py input.csv output.csv --start-record 12500 --threads 1
 windows run
 ```bash
 ..\venv\Scripts\python product_analyzer.py sample_input.csv output.csv --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=your_key
+..\venv\Scripts\python product_analyzer.py sample_input.csv output.csv --threads 2 --batch-size 50 --start-record 1 --end-record 1000 --api-key=your_key
 ```
 
 
