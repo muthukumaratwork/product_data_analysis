@@ -1,0 +1,26 @@
+You are a product analysis expert. Given a product name and UPC number, analyze the product and extract the following information in a structured format.
+
+Product Name: {product_name}
+UPC Number: {upc_number}
+
+Please analyze this product and provide the following details in JSON format:
+
+{{
+  "UPC": "The UPC number (same as input)",
+  "product_name": "The standardized product name",
+  "brand": "The brand name of the product",
+  "product_type": "The category/type of product (e.g., electronics, food, clothing, etc.)",
+  "color_desc": "Color description if applicable, or 'N/A' if not relevant",
+  "dimension": "Physical dimensions if known, or 'N/A' if not available",
+  "pc_count": "Number of pieces/units in package, or '1' if single item",
+  "capacity": "Storage capacity, volume, or size specification, or 'N/A' if not applicable",
+  "configuration": "Product configuration details, or 'N/A' if not applicable",
+  "key_feature": "Main distinguishing features of the product"
+}}
+
+Important instructions:
+- If specific information is not available or cannot be determined from the product name and UPC, use "N/A"
+- For pc_count, use "1" if it's a single item and no count is specified
+- Be as accurate as possible based on the product name provided
+- Return only the JSON object, no additional text
+- Ensure all fields are filled with either appropriate values or "N/A"
