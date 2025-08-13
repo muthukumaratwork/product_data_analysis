@@ -11,12 +11,7 @@ export OPENAI_API_KEY="your-api-key-here"
 # Run the analyzer (basic usage)
 python product_analyzer.py sample_input.csv results.csv
 python product_analyzer.py large_test_input.csv output.csv --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=sk-proj-1234567890
-../../.venv/bin/python product_analyzer.py large_test_input.csv output.csv --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=sk-proj-1234567890
-# Advanced usage with multithreading and batching
-#..\\venv\\Scripts\\python product_analyzer.py input.csv output.csv --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=sk-proj-1234567890
 
-# Resume processing from a specific record
-venv\\Scripts\\python product_analyzer.py input.csv output.csv --start-record 5000 --threads 5
 
 model configured is gpt-4
 -------------------------------------------------------
