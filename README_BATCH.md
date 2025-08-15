@@ -212,4 +212,10 @@ The script creates detailed logs in `batch_product_analyzer.log`:
 | **Performance** | Standard | Optimized for batching |
 | **Use case** | Mixed usage | Large datasets |
 
+windows run
+```bash
+..\venv\Scripts\python batch_product_analyzer.py sample_input.csv output.csv --products-per-request 5 --threads 10 --batch-size 100 --start-record 1 --end-record 50 --api-key=your_key
+..\venv\Scripts\python batch_product_analyzer.py sample_input.csv output.csv --products-per-request 5 --threads 2 --batch-size 50 --start-record 1 --end-record 1000 --api-key=your_key
+```
+
 The batch script is **purpose-built** for your use case: efficient processing of large datasets with multiple products per API request!
