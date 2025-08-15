@@ -449,7 +449,7 @@ Examples:
                        help='Start processing from this record number (1-based)')
     parser.add_argument('--end-record', type=int,
                        help='Stop processing at this record number (1-based, inclusive)')
-    parser.add_argument('--delay', type=float, default=0.05,
+    parser.add_argument('--delay', type=float, default=0.50,
                        help='Delay between batch groups in seconds (default: 0.05)')
     parser.add_argument('--api-key', type=str,
                        help='OpenAI API key (if not set in environment)')
